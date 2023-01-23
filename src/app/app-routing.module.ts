@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BreedComponent } from './breed/breed.component';
+import { HistoryComponent } from './history/history.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path:'Breed',component:BreedComponent
+  },
+  {
+    path:'History',component:HistoryComponent
   }
 ];
 

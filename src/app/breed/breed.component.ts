@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { map } from 'rxjs';
 import { DogsService } from '../dogs.service';
 
-interface val {
-  name: String;
-  value: Number;
-}
+
 @Component({
   selector: 'app-breed',
   template: `
@@ -22,7 +18,7 @@ interface val {
 
     <section class="section">
       <div class="container has-text-centered" id="breedContainer">
-        <img src= {{src}} alt="dog" id="breedPic">
+        <img class="image" src= {{src}} alt="dog" id="breedPic">
       </div>
     </section>
 
@@ -90,7 +86,7 @@ interface val {
                 <tbody>
                   <tr *ngFor="let val of ratings">
                     <td>
-                      <img src='{{ val.key }}' >
+                      <img class="image" src='{{ val.key }}' >
                     </td>
                     <td>{{ val.value }}</td>
                   </tr>
@@ -102,7 +98,15 @@ interface val {
       </div>
     </section>
   `,
-  styles: []
+    styles: [`
+    .image{
+      max-height: 500px;
+      height: 70%;
+      width: auto;
+      margin: auto;
+      display: block;
+    }
+  `]
 })
 
 
