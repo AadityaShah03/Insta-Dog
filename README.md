@@ -1,5 +1,7 @@
 # InstaDog
 
+A website built to rate dogs using the Angular framework. It saves ratings locally as well as showing stored ratings through a simple menu
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
 ## Development server
